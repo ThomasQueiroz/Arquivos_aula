@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h1>sjlksjalk</h1>
+        Nome:
+        <input type="text" placeholder="Digite seu nome" id="nome"/>
+        <br/><br/>
+        Ano que nasceu:
+        <input type="number" placeholder="Digte o ano que você nasceu:" id="ano"/>
+        <br/><br/>
+        <button type="button" onclick="calcularIdade()">Calcular</button>
+    </body>
+    <script>
+        function calcularIdade(){
+            const nome = document.getElementById("nome")
+            const ano = document.getElementById("ano")
+            const resposta = 365 * (2025 - ano.value)
+            alert(`${nome.value} com base na sua idade, você viveu ${resposta}`)
+        }
+    </script>
+</html>

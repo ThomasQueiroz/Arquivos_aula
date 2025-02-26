@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aberturas de xadrez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.jpg">
+  </head>
+  <body>  
+    <div class="easter-egg">
+      <div class="tenor-gif-embed" data-postid="25270366" data-share-method="host" data-aspect-ratio="1" data-width="100">
+        <a href="https://tenor.com/view/awkward-handshake-chess-tournament-gif-25270366">Awkward Handshake GIF</a>
+        from <a href="https://tenor.com/search/awkward-gifs">Awkward GIFs</a>
+      </div>
+      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    
+      <div class="container mt-5">
+        <h1 class="text-center">Aberturas de xadrez do Thomas</h1>
+        <form action="" class="mb-4" id="aberturaForm"> 
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input id="nome" type="text" class="form-control" placeholder="Digite o nome da abertura">
+          </div>
+          <div class="mb-3">
+            <label for="lances" class="form-label">Lances principais</label>
+            <input id="lances" type="text" class="form-control" placeholder="Digite os lances principais" min="1">
+          </div>
+          <div class="mb-3">
+            <label for="variantes" class="form-label">Variantes</label>
+            <input id="variantes" type="text" class="form-control" placeholder="Digite as variantes principais"> 
+          </div>
+          <div class="mb-3">
+            <label for="oph" class="form-label">Origem/Pessoa homenageada</label>
+            <input id="oph" type="text" class="form-control" placeholder="Digite a origem da abertura ou a(s) pessoa(s) homenageadas"> 
+          </div>
+          <div class="mb-3">
+            <label for="jogadores" class="form-label">Principais jogadores</label>
+            <input id="jogadores" type="text" class="form-control" placeholder="Digite os principais jogadores dessa abertura"> 
+          </div>
+          <button type="submit" class="text-nowrap btn btn-success">Adicionar</button>
+          <button type="reset" class="text-nowrap btn btn-danger">Apagar dados</button>
+          <button type="button" id="botaoAtualizar" class="btn btn-warning">Atualizar</button>
+        </form>
+        <table class="table table-dark table-striped">
+          <thead>
+            <th>Nome</th>
+            <th>Lances principais</th>
+            <th>Variantes</th>
+            <th>Origem/Pessoa homenageada</th>
+            <th>Principais jogadores</th>
+            <th>Ações</th>
+          </thead>
+          <tbody id="tabelaAberturas"></tbody>
+        </table>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+              crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+  </body>
+</html>

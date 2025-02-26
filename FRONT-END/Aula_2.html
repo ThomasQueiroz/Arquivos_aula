@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Sim</h1>
+        <h2>Não</h2>
+        <h3 id="Cleiton"></h3>
+        <h4 id="Jubileu"></h4>
+    </body>
+    <script>
+        let nome = prompt("Olá, qual seu nome?")
+        let h3 = document.getElementById("Cleiton")
+        h3.textContent = "Seu nome é: "+nome //o Texto do h3 é o que estiver aqui
+        let ano = prompt("Em que ano você nasceu?")
+        const Idade = 2025 - ano //Forma alternativa: const Anoatual = 2025 const idade = Anoatual - ano
+        let h4 = document.getElementById("Jubileu")
+        let horas = Idade * 8760
+        h4.textContent = "Sua idade é: "+Idade+" e você viveu "+horas+" horas"
+    </script>
+</html>

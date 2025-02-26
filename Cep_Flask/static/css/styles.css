@@ -1,0 +1,77 @@
+body {
+        background-color: #1e1e1e; /* Cor de fundo preta suave */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #0d3b66; /* Azul escuro */
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #f0f0f0; /* Cor de texto clara */
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+    .form-label {
+        color: #f0f0f0; /* Cor de texto clara para as labels */
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 94%;
+        padding: 12px;
+        margin-bottom: 20px; /* Diminuí o espaçamento entre o campo de input e o botão */
+        border-radius: 8px;
+        border: 2px solid #1e1e1e; /* Cor da borda preta */
+        background-color: #333; /* Cor de fundo escura para o input */
+        color: #f0f0f0; /* Texto claro */
+        font-size: 1rem;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: #0077b6; /* Azul vibrante para o foco */
+        background-color: #1c1c1c; /* Cor de fundo mais escura no foco */
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #0077b6; /* Azul vibrante */
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px; /* Espaço entre o input e o botão */
+    }
+
+    button:hover {
+        background-color: #00b4d8; /* Azul mais claro no hover */
+    }
+
+    .resultado {
+        margin-top: 30px;
+        color: #f0f0f0;
+        font-size: 1.2rem;
+    }
+
+    .resultado p {
+        margin: 10px 0;
+    }

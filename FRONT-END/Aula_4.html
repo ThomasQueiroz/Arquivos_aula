@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Tigrinho</title>
+    </head>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body {
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <span></span>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <br/>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <br/>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <br/>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <button type="button" onclick="sortearcores(this)"></button>
+        <br/>
+    </body>
+    <script>
+        function sortearcores(botao){
+            const cores = [
+                "blue", "yellow","red","green","cyan","brown","gray","purple", 
+            ]
+
+            const tigrinho = Math.floor(Math.random() * cores.length)
+            const sortudodotigre = cores[tigrinho]
+            botao.style.backgroundColor = sortudodotigre
+            botao.style.border = `1px solid ${sortudodotigre}`
+            botao.textContent = cores[tigrinho]
+            botao.style.color = "black"
+        }
+    </script>
+</html>
